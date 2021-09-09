@@ -1,3 +1,10 @@
+.hero-container {
+    display: flex;
+    width: 60vw;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
 .heroes {
     list-style: none;
     padding: 0;
@@ -7,6 +14,7 @@
     margin: .5rem 0;
     padding: .5rem .5rem;
     width: 20vw;
+    min-width: 180px;
     border-radius: 5px;
     cursor: pointer;
     color: rgb(235, 235, 235);
@@ -25,9 +33,16 @@
     transition: all 0.2s
 } */
 .heroes li.selected:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(29, 29, 29);
     transition: all 0.2s;
 }
 .badge {
     margin-right: .5em;
+}
+@media screen and (max-width: 440px) {
+    .hero-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 }
