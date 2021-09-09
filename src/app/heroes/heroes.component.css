@@ -1,17 +1,24 @@
 .hero-container {
+    margin: 1.5rem;
     display: flex;
-    width: 60vw;
+    /* width: 100vw; */
     align-items: flex-start;
-    justify-content: space-between;
 }
-
+h2 {
+    margin: 1.5rem;
+}
 .heroes {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+    width: 50vw;
     list-style: none;
     padding: 0;
 }
 
 .heroes li{
-    margin: .5rem 0;
+    /* margin: .5rem; */
     padding: .5rem .5rem;
     width: 20vw;
     min-width: 180px;
@@ -39,8 +46,15 @@
 .badge {
     margin-right: .5em;
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 720px) {
     .hero-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+}
+@media screen and (max-width: 444px) {
+    .heroes {
     display: flex;
     flex-direction: column;
     width: 100%;
