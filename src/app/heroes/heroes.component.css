@@ -1,14 +1,15 @@
 .hero-container {
-    margin: 1.5rem;
+    margin: 1rem;
     display: flex;
     /* width: 100vw; */
     align-items: flex-start;
 }
 h2 {
     margin: 1.5rem;
+    /* margin-bottom: 0; */
 }
 .heroes {
-    margin: 1rem;
+    /* margin: 1rem; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: .5rem;
@@ -17,37 +18,19 @@ h2 {
     padding: 0;
 }
 
-.heroes li{
-    /* margin: .5rem; */
-    padding: .5rem .5rem;
-    width: 20vw;
-    min-width: 180px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: rgb(235, 235, 235);
-    background-color: rgb(104, 104, 104);
-}
-.heroes li:hover {
-    background-color: rgb(69, 69, 69);
-    transition: all 0.2s
-}
-.heroes li.selected {
-    background-color: #369;
-    transition: all 0.2s;
-}
-/* .heroes li.selected:active {
-    background-color: #369;
-    transition: all 0.2s
-} */
-.heroes li.selected:hover {
-    background-color: rgb(29, 29, 29);
-    transition: all 0.2s;
-}
-.heroes a{
-    color: rgb(235, 235, 235);
+.heroes a {
+    margin: 0 .5rem;
+    display: inline-block;
+    color: white;
+    background-color: rgb(145, 145, 145);
+    padding: .5rem 1rem;
     text-decoration: none;
-    
+    border-radius: 5px;
 }
+.heroes a:hover {
+    background-color: #444;
+}
+
 .badge {
     margin-right: .5em;
 }
