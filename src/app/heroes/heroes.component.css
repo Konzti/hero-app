@@ -21,7 +21,7 @@ h2 {
 .heroes a {
     margin: 0 .5rem;
     display: inline-block;
-    color: white;
+    color: rgb(240, 240, 240);
     background-color: rgb(145, 145, 145);
     padding: .5rem 1rem;
     text-decoration: none;
