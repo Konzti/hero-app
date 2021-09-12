@@ -43,6 +43,11 @@ h2 {
     background-color: rgb(29, 29, 29);
     transition: all 0.2s;
 }
+.heroes a{
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+    
+}
 .badge {
     margin-right: .5em;
 }
